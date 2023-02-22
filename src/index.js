@@ -1,11 +1,11 @@
-
 import './style.css';
+
 const toDoList = document.querySelector('.todo-list-ul');
 const Tasks = [
-    { id: 1, task: 'Learn WebPack', completed: true },
-    { id: 2, task: 'Learn JavaScript', completed: true },
-    { id: 3, task: 'Talk to Friend', completed: false },
-  ];
+  { id: 1, task: 'Learn WebPack', completed: true },
+  { id: 2, task: 'Learn JavaScript', completed: true },
+  { id: 3, task: 'Talk to Friend', completed: false },
+];
 
 const FnToDoList = (Array) => {
   toDoList.innerHTML = '';
@@ -21,5 +21,4 @@ const FnToDoList = (Array) => {
   });
 };
 
-  
-  FnToDoList(Tasks);
+FnToDoList(Tasks);
