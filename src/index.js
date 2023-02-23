@@ -5,8 +5,8 @@ import {
   editTask,
   deleteTask,
 } from './modules/UI.js';
-import { clearCompleted } from './modules/clearCompleted.js';
-import { markTask } from './modules/marktask.js';
+import clearCompleted from './modules/clearCompleted.js';
+import markTask from './modules/marktask.js';
 import { updateLocalStorage, getLocalStorage } from './modules/storage.js';
 
 const input = document.querySelector('.input');

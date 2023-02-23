@@ -33,7 +33,6 @@ export const addTask = (ListArray, task) => {
   ListArray.push({ task, completed: false, id: ListArray.length + 1 });
 };
 
-
 export const editTask = (e, ListArray) => {
   const clickedTask = e.target.closest('.list-li-text');
   clickedTask.disabled = false;
