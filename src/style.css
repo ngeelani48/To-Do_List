@@ -13,6 +13,21 @@ body {
   height: 100%;
 }
 
+.cross-sign {
+  cursor: pointer;
+  margin-left: 3%;
+}
+
+.add-btn {
+  background-color: #666;
+  color: #fff;
+  border: none;
+  padding: 0 6px;
+  cursor: pointer;
+  outline: none;
+  margin-left: 89%;
+}
+
 .todo-list {
   min-width: 400px;
   width: 50%;
@@ -32,32 +47,43 @@ body {
   padding: 0 14px;
 }
 
-.todo-list-ul {
+.list-ul {
   list-style: none;
   padding: 0 14px;
   margin: 0;
 }
 
-.todo-list-li {
+.list-li {
   padding: 7px 0;
   border-bottom: 1px solid #aaa;
 }
 
-.todo-list-li:last-child {
+.list-li:last-child {
   border-bottom: none;
   padding: 7px 0 0 0;
 }
 
-.todo-list-clear-btn {
+.list-li-text {
+  border: none;
+  background-color: #fff;
+  padding: 0 10px;
+  width: 83%;
+}
+
+.list-li-text:hover {
+  background-color: #aaa;
+}
+
+.clear-btn {
   width: 100%;
   height: 40px;
   margin-top: 14px;
   border: none;
   cursor: pointer;
-  background-color: #555;
+  background-color: #666;
   color: #fff;
 }
 
-.todo-list-clear-btn:hover {
+.clear-btn:hover {
   background-color: #333;
 }
