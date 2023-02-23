@@ -12,12 +12,14 @@ body {
   align-items: center;
   height: 100%;
 }
+
 .cross-sign {
-    cursor: pointer;
-    margin-left: 3%;
+  cursor: pointer;
+  margin-left: 3%;
 }
-.add-btn{
-    background-color: #666;
+
+.add-btn {
+  background-color: #666;
   color: #fff;
   border: none;
   padding: 0 6px;
@@ -25,7 +27,6 @@ body {
   outline: none;
   margin-left: 89%;
 }
-
 
 .todo-list {
   min-width: 400px;
@@ -61,14 +62,16 @@ body {
   border-bottom: none;
   padding: 7px 0 0 0;
 }
+
 .list-li-text {
-    border: none;
-    background-color: #fff;
-    padding: 0 10px;
-    width: 83%;
+  border: none;
+  background-color: #fff;
+  padding: 0 10px;
+  width: 83%;
 }
+
 .list-li-text:hover {
-    background-color: #aaa;
+  background-color: #aaa;
 }
 
 .clear-btn {
