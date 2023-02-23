@@ -52,7 +52,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Not Created Yet]
+- [https://ngeelani48.github.io/To-Do_List/dist/]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -112,7 +112,7 @@ npx eslint .
 
 You can deploy this project using:
 
-GitHub Pages but later after completion.
+(https://ngeelani48.github.io/To-Do_List/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
