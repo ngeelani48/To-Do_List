@@ -2,11 +2,11 @@ import './style.css';
 import {
   FnToDoList,
   addTask,
-  clearCompleted,
   editTask,
   deleteTask,
-  markTask,
 } from './modules/UI.js';
+import { clearCompleted } from './modules/clearCompleted.js';
+import { markTask } from './modules/marktask.js';
 import { updateLocalStorage, getLocalStorage } from './modules/storage.js';
 
 const input = document.querySelector('.input');
@@ -40,6 +40,8 @@ List.addEventListener('click', (e) => {
   if (e.target.closest('.list-li-checkbox')) {
     markTask(e, Tasks);
   }
+  updateLocalStorage(Tasks);
+  FnToDoList(Tasks);
 });
 
 clearCompletedBtn.addEventListener('click', () => {
