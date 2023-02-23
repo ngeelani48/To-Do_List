@@ -1,24 +1,62 @@
 import './style.css';
-
-const toDoList = document.querySelector('.todo-list-ul');
-const Tasks = [
-  { id: 1, task: 'Learn WebPack', completed: true },
-  { id: 2, task: 'Learn JavaScript', completed: true },
-  { id: 3, task: 'Talk to Friend', completed: false },
-];
-
-const FnToDoList = (Array) => {
-  toDoList.innerHTML = '';
-
-  Array.forEach((toDo) => {
-    const toDoItem = document.createElement('li');
-    toDoItem.classList.add('todo-list-li');
-    toDoItem.innerHTML = `
-        <input type="checkbox" class="todo-list-li-checkbox" ${toDo.completed ? 'checked' : ''}>
-        <span class="todo-list-li-task">${toDo.task}</span>
-        `;
-    toDoList.appendChild(toDoItem);
+import {
+    FnToDoList,
+    addTask,
+    clearCompleted,
+    editTask,
+    deleteTask,
+    markTask,
+  } from './modules/UI.js';
+  import { updateLocalStorage, getLocalStorage } from './modules/storage.js';
+  
+  
+  const input = document.querySelector('.input');
+  const List = document.querySelector('.list-ul');
+  const clearCompletedBtn = document.querySelector('.clear-btn');
+  const addTaskBtn = document.querySelector('.add-btn');
+  
+  let Tasks = getLocalStorage();
+  
+  FnToDoList(Tasks);
+  
+  input.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter' && input.value !== '') {
+      addTask(Tasks, input.value);
+      input.value = '';
+      updateLocalStorage(Tasks);
+      FnToDoList(Tasks);
+    }
   });
-};
-
-FnToDoList(Tasks);
+  
+  addTaskBtn.addEventListener('click', () => {
+    if (input.value !== '') {
+      addTask(Tasks, input.value);
+      input.value = '';
+      updateLocalStorage(Tasks);
+      FnToDoList(Tasks);
+    }
+  });
+  
+  List.addEventListener('click', (e) => {
+    if (e.target.closest('.list-li-checkbox')) {
+      markTask(e, Tasks);
+    }
+  });
+  
+  clearCompletedBtn.addEventListener('click', () => {
+    Tasks = clearCompleted(Tasks);
+    updateLocalStorage(Tasks);
+    FnToDoList(Tasks);
+  });
+  
+  List.addEventListener('dblclick', (e) => {
+    if (e.target.closest('.list-li-text')) {
+      editTask(e, Tasks);
+    }
+  });
+  
+  List.addEventListener('click', (e) => {
+    if (e.target.closest('.cross-sign')) {
+      deleteTask(e, Tasks);
+    }
+  });

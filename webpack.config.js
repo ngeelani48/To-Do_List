@@ -8,6 +8,9 @@ module.exports = {
   devServer: {
     static: './dist',
   },
+  devServer: {
+    static: './dist',
+  },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'To do list',
