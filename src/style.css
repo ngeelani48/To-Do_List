@@ -15,7 +15,8 @@ body {
 
 .cross-sign {
   cursor: pointer;
-  margin-left: 3%;
+  margin-left: 1.5%;
+  font-size: 1.5rem;
 }
 
 .add-btn {
@@ -25,7 +26,7 @@ body {
   padding: 0 6px;
   cursor: pointer;
   outline: none;
-  margin-left: 89%;
+  margin-left: 88%;
 }
 
 .todo-list {
@@ -68,6 +69,7 @@ body {
   background-color: #fff;
   padding: 0 10px;
   width: 83%;
+  font-size: 1.5rem;
 }
 
 .list-li-text:hover {
