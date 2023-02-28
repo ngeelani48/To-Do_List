@@ -32,7 +32,7 @@
 
 # 📖 [To Do List] <a name="To Do List: Project setup with WebPack"></a>
 
-**[To Do List]** is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. You will build a simple website that allows for doing that, and you will do it using ES6 and Webpack!
+**[To Do List]** is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. You can delete,edit and add more tasks.
 
 ## 🛠 Built With <a name="Visual Studio Code"></a>
 
