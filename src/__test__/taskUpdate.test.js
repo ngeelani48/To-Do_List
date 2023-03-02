@@ -1,6 +1,6 @@
-import { editTask } from '../__mock__/editTask.js';
-import { markTask } from '../__mock__/markTask.js';
-import { clearCompleted } from '../__mock__/clearCompleted.js';
+import editTask from '../__mock__/editTask.js';
+import markTask from '../__mock__/markTask.js';
+import clearCompleted from '../__mock__/clearCompleted.js';
 
 describe('editTask', () => {
   const ListArray = [
@@ -19,8 +19,6 @@ describe('editTask', () => {
   });
 });
 
-
-
 describe('markTask', () => {
   const ListArray = [
     { id: 1, task: 'task1', completed: false },
@@ -38,7 +36,6 @@ describe('markTask', () => {
     expect(ListArray[1].completed).toBe(false);
   });
 });
-
 
 describe('clearCompleted', () => {
   test('check for clear all completed tasks', () => {
