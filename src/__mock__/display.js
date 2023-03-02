@@ -1,6 +1,7 @@
-const List = [];
 const FnToDoList = () => {
-  const ListArray = [];
+  
+let ListArray=[];
+
   ListArray.forEach((toDo) => {
     const toDoItem = document.createElement('li');
     toDoItem.classList.add('list-li');
