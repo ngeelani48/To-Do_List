@@ -1,4 +1,4 @@
-import  addTask  from '../__mock__/addTask.js';
+import addTask from '../__mock__/addTask.js';
 import deleteTask from '../__mock__/deleteTask.js';
 
 describe('adding tasks', () => {
@@ -26,7 +26,6 @@ describe('adding tasks', () => {
     expect(toDoTasks).toEqual([task1, task2]);
   });
 });
-
 
 describe('deleting tasks', () => {
   test('deleteTask', () => {
