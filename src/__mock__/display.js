@@ -1,7 +1,6 @@
 const FnToDoList = () => {
   
 let ListArray=[];
-  //ListArray = JSON.parse(localStorage.getItem('List')) || [];
   ListArray.forEach((toDo) => {
     const toDoItem = document.createElement('li');
     toDoItem.classList.add('list-li');
