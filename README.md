@@ -108,6 +108,11 @@ Track JavaScript linter errors run:
 ```
 npx eslint .
 ```
+Track Jest Test run:
+```
+npm test
+```
+
 ### Deployment
 
 You can deploy this project using:
@@ -125,6 +130,11 @@ You can deploy this project using:
 - Twitter: [@twitterhandle](https://twitter.com/ngeelani48)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/m-n-geelani-3446097275/)
 
+👤 **Sane Myburg**
+
+- GitHub: [@SaneMyburg](https://github.com/SaneMyburg)
+- Twitter: [@SAneMyburg](https://twitter.com/SaneMyburg)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/SaneMyburg/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
