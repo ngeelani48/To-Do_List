@@ -1,19 +1,7 @@
 import FnToDoList from './display.js'
-const addTask = () => {
-    ListArray=[];
-    ListArray.push(
-        {
-          task: 'Completed my today project',
-          completed: false,
-          index: 0,
-        },
-        {
-          task: 'finished eating dinner',
-          completed: true,
-          index: 1,
-        }
-      );
-      localStorage.setItem('List', JSON.stringify(ListArray));
+const addTask = (ListArray, task) => {
+
+   ListArray.push({ task, completed: false, id: ListArray.length + 1 });
     FnToDoList();
   };
   export default addTask;
