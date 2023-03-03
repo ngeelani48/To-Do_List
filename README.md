@@ -38,6 +38,12 @@
 
 ### Tech Stack <a name="JavaScript HTML & CSS"></a>
 
+- HTML
+- CSS
+- Javascript
+- Webpack
+
+
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
