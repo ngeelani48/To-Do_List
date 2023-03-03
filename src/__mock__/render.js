@@ -1,18 +1,16 @@
-const renderToDoList = (toDoListArray, toDoListDOM) => {
-  toDoListDOM.innerHTML = '';
+const FnToDoList = (ListArray, DOMList) => {
+  DOMList.innerHTML = '';
 
-  toDoListArray.forEach((toDo) => {
+  ListArray.forEach((toDo) => {
     const toDoItem = document.createElement('li');
-    toDoItem.classList.add('todo-list-li');
+    toDoItem.classList.add('list-li');
 
-    const toDoCheckbox = document.createElement('input');
-    toDoCheckbox.classList.add('todo-list-li-checkbox');
-    toDoCheckbox.type = 'checkbox';
-    toDoCheckbox.checked = toDo.completed;
-    toDoItem.appendChild(toDoCheckbox);
+    toDoItem.innerHTML = `
+    <input type="checkbox" class="list-li-checkbox" ${toDo.completed ? 'checked' : ''}>
+        `;
 
     const toDoText = document.createElement('input');
-    toDoText.classList.add('todo-list-li-text');
+    toDoText.classList.add('list-li-text');
     toDoText.value = toDo.task;
     toDoText.disabled = true;
     toDoItem.appendChild(toDoText);
@@ -22,12 +20,12 @@ const renderToDoList = (toDoListArray, toDoListDOM) => {
     }
 
     const crossIcon = document.createElement('span');
-    crossIcon.classList.add('todo-list-li-cross');
-    crossIcon.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+    crossIcon.classList.add('cross-sign');
+    crossIcon.innerHTML = 'x';
     toDoItem.appendChild(crossIcon);
 
-    toDoListDOM.appendChild(toDoItem);
+    DOMList.appendChild(toDoItem);
   });
 };
 
-export default renderToDoList;
+export default FnToDoList;
