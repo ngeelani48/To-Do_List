@@ -40,7 +40,7 @@
 
 - HTML
 - CSS
-- Javascript
+- Javascript ES6
 - Webpack
 
 
@@ -48,7 +48,10 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[ basic UI with plain HTML]**
+- **Adding task**
+- **Removing task**
+- **Completing task using check**
+- **Removing all completed task using button**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
