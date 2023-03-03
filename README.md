@@ -38,11 +38,20 @@
 
 ### Tech Stack <a name="JavaScript HTML & CSS"></a>
 
+- HTML
+- CSS
+- Javascript ES6
+- Webpack
+
+
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- **[ basic UI with plain HTML]**
+- **Adding task**
+- **Removing task**
+- **Completing task using check**
+- **Removing all completed task using button**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
